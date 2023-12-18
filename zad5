@@ -1,0 +1,10 @@
+"""zad 5"""
+
+def wartość(input_list, value):
+    return value in input_list
+
+lista = [1, 2, 3, 4, 5]
+
+sprawdz = int(input("Podaj wartość do sprawdzenia: "))
+wynik = wartość(lista, sprawdz)
+print("Czy ten wynik jest w liście? :", wynik)
