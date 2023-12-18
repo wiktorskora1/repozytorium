@@ -1,0 +1,11 @@
+"""zad 2"""
+
+def pomnoz(a, b):
+    wynik = a * b
+    return wynik
+
+liczba1 = int(input("Podaj pierwszą liczbę całkowitą: "))
+liczba2 = int(input("Podaj drugą liczbę całkowitą: "))
+
+wynik_mnozenia = pomnoz(liczba1, liczba2)
+print("Wynik mnożenia:", wynik_mnozenia)
