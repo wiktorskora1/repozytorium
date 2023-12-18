@@ -1,14 +1,14 @@
+def func(first_list: list, sec_list: list) -> list:
+    connected_list = first_list + sec_list
+    without_duplicate_list = []
+    power_3_list = []
 
-"""zad 6"""
+    for num in connected_list:
+        if num not in without_duplicate_list:
+            without_duplicate_list.append(num)
 
-def process_lists(list1, list2):
-    combined_list = list1 + list2
-    unique_list = list(set(combined_list))
-    powered_list = [x**3 for x in unique_list]
+    for num in without_duplicate_list:
+        power_3_list.append(num ** 3)
 
-    return powered_list
+    return power_3_list
 
-list1 = [1, 2, 3, 4]
-list2 = [3, 4, 5, 6]
-result = process_lists(list1, list2)
-print("Final list:", result)
