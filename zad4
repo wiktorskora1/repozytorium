@@ -1,13 +1,5 @@
-"""zad 4"""
-
-def sprawdz_suma(a, b, c):
-    suma_ab = a + b
-    return suma_ab >= c
-
-# Pobieranie liczb
-liczba1 = int(input("Podaj pierwszą liczbę całkowitą: "))
-liczba2 = int(input("Podaj drugą liczbę całkowitą: "))
-liczba3 = int(input("Podaj trzecią liczbę całkowitą: "))
-
-wynik = sprawdz_suma(liczba1, liczba2, liczba3)
-print("Czy suma pierwszych dwóch liczb jest większa lub równa trzeciej?", wynik)
+def check_numbers(num_1: int, num_2: int, num_3: int) -> bool:
+    if num_1 + num_2 >= num_3:
+        return True
+    else:
+        return False
