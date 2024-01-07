@@ -1,3 +1,7 @@
-def return_full_name(name: str, surname: str) -> str:
-    final_str = f'Cześć {name} {surname}!'
-    return final_str
+def wiadomosc(name, surname):
+    return f'Cześć {name} {surname}!'
+
+name = input("Podaj imię: ")
+surname = input("Podaj nazwisko: ")
+wynik = wiadomosc(name, surname)
+print(wynik)
