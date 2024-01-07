@@ -1,2 +1,7 @@
-def multipy(first_num: int, sec_num: int) -> int:
-    return first_num * sec_num
+def pomnoz(a, b):
+    return a * b
+
+liczba1 = int(input("Podaj pierwszą liczbę: "))
+liczba2 = int(input("Podaj drugą liczbę: "))
+wynik = pomnoz(liczba1, liczba2)
+print(f"Wynik mnożenia dwóch liczb to: {wynik}")
