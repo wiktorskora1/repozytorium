@@ -1,14 +1,12 @@
-def func(first_list: list, sec_list: list) -> list:
-    connected_list = first_list + sec_list
-    without_duplicate_list = []
-    power_3_list = []
+def przetworz_listy(lista1, lista2):
+    polaczona_lista = lista1 + lista2
+    unikalna_lista = list(set(polaczona_lista))
+    przetworzona_lista = [x ** 3 for x in unikalna_lista]
+    return przetworzona_lista
 
-    for num in connected_list:
-        if num not in without_duplicate_list:
-            without_duplicate_list.append(num)
+lista1 = [1, 2, 3]
+lista2 = [3, 4, 5]
 
-    for num in without_duplicate_list:
-        power_3_list.append(num ** 3)
+wynik = przetworz_listy(lista1, lista2)
 
-    return power_3_list
-
+print(f'Wynikowa lista: {wynik}')
